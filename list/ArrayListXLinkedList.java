@@ -7,6 +7,7 @@ import java.util.List;
 public class ArrayListXLinkedList {
     public static void main(String[] args) {
         // ARRAY-LIST
+        System.out.println("ArrayList (maleNames):");
 
         // Creating a ArrayList by using a List Reference
         List<String> maleNames = new ArrayList<String>();
@@ -30,6 +31,7 @@ public class ArrayListXLinkedList {
         maleNames.size();
 
         // LINKED-LIST
+        System.out.println("LinkedList (femaleNames): ");
 
         // Creating a ArrayList by using a List Reference
         List<String> femaleNames = new LinkedList<String>();
