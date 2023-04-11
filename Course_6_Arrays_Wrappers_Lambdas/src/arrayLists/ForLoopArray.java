@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ForLoopArray {
     public static void main(String[] args) {
         
-        ArrayList list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList<Integer>();
         
         int grade1 = 10;
         int grade2 = 9;

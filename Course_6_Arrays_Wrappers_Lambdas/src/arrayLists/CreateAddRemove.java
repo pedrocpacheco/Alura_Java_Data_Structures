@@ -6,7 +6,7 @@ public class CreateAddRemove {
     public static void main(String[] args) {
         
         // Creating the nameList
-        ArrayList nameList = new ArrayList();
+        ArrayList<String> nameList = new ArrayList<String>();
 
         // Priting nameList size as 0
         System.out.println(nameList.size());
