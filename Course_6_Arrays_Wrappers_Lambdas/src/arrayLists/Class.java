@@ -23,6 +23,13 @@ public class Class {
         // Dinamic answering if the name is or is not in the nameList
         if(nameList.contains(nameSearched))
             System.out.println("\nName Founded!\n");
+            System.out.println("Do you want the remove that name do the List? \nPress 1: Yes | Other: No\n");
+            int option = sc.nextInt();
+            sc.close();
+
+            if(option == 1){
+                nameList.remove(nameSearched);
+            }
         else  
             System.out.println("\nName Not Founded!\n");
 
