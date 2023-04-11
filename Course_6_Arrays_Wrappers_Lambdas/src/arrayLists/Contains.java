@@ -3,7 +3,7 @@ package arrayLists;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Class {
+public class Contains {
     public static void main(String[] args) {
         
         // Creating Name List
