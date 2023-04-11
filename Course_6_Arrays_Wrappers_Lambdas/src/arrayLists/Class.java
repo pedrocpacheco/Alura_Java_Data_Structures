@@ -19,7 +19,6 @@ public class Class {
         // Asking the User to Type the Name he's looking for
         System.out.println("Search in the Name list: ");
         String nameSearched = sc.nextLine();
-        sc.close();
 
         // Dinamic answering if the name is or is not in the nameList
         if(nameList.contains(nameSearched))
@@ -27,6 +26,13 @@ public class Class {
         else  
             System.out.println("\nName Not Founded!\n");
 
+            System.out.println("Do you want the add that name do the List? \nPress 1: Yes | Other: No\n");
+            int option = sc.nextInt();
+            sc.close();
+
+            if(option == 1){
+                nameList.add(nameSearched);
+            }
         // Showing all the name using a for loop
         System.out.println("All the Names in The Name List Are:\n");
         for(String name : nameList){
