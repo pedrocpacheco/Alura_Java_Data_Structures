@@ -24,20 +24,20 @@ public class Class {
         if(nameList.contains(nameSearched))
             System.out.println("\nName Founded!\n");
             System.out.println("Do you want the remove that name do the List? \nPress 1: Yes | Other: No\n");
-            int option = sc.nextInt();
+            int optionRemove = sc.nextInt();
             sc.close();
 
-            if(option == 1){
+            if(optionRemove == 1){
                 nameList.remove(nameSearched);
             }
         else  
             System.out.println("\nName Not Founded!\n");
 
             System.out.println("Do you want the add that name do the List? \nPress 1: Yes | Other: No\n");
-            int option = sc.nextInt();
+            int optionAdd = sc.nextInt();
             sc.close();
 
-            if(option == 1){
+            if(optionAdd == 1){
                 nameList.add(nameSearched);
             }
         // Showing all the name using a for loop
