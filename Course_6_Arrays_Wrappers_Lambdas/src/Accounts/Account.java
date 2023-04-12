@@ -1,8 +1,9 @@
 package Accounts;
 
 public class Account {
-    int number;
-    int agency;
+    private int number;
+    private int agency;
+    private String owner;
 
    public Account(int number, int agency){
     this.number = number;
@@ -27,6 +28,14 @@ public class Account {
    
    public int getAgency() {
        return agency;
+   }
+
+   public String getOwner() {
+       return owner;
+   }
+
+   public void setOwner(String owner) {
+       this.owner = owner;
    }
 
 }
