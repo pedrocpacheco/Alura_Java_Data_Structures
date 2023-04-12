@@ -1,4 +1,4 @@
-package primitivesInLists;
+package autoBoxingUnboxing.primitivesInLists;
 
 import java.util.ArrayList;
 import java.util.List;
