@@ -1,8 +1,9 @@
 package Accounts;
 
-public class Account {
+public class Account implements Comparable<Account>{
     private int number;
     private int agency;
+    private double balance;
     private String owner;
 
    public Account(int number, int agency){
@@ -34,8 +35,21 @@ public class Account {
        return owner;
    }
 
+   public double getBalance() {
+       return balance;
+   }
+
    public void setOwner(String owner) {
        this.owner = owner;
-   }
+    }
+    
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+@Override
+public int compareTo(Account comparedAccount) {
+    return Double.compare(this.balance, comparedAccount.balance);
+}
 
 }
