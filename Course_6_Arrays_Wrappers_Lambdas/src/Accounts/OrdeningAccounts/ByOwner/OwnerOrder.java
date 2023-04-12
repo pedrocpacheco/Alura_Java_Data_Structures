@@ -19,7 +19,7 @@ public class OwnerOrder{
         
         System.out.println("Printing UnSorted List:");
         for (Account account : accountList) {
-            System.out.println("Name: " + account.getOwner() + "Number: " + account.getNumber() + " Agency: " + account.getAgency());
+            System.out.println("Name: " + account.getOwner() + " Number: " + account.getNumber() + " Agency: " + account.getAgency());
         }
 
         OwnerComparator accountComparator = new OwnerComparator();
@@ -29,7 +29,7 @@ public class OwnerOrder{
 
         System.out.println("Printing Sorted List:");
         for (Account account : accountList) {
-            System.out.println("Number: " + account.getNumber() + " Agency: " + account.getAgency());
+            System.out.println("Name: " + account.getOwner() + " Number: " + account.getNumber() + " Agency: " + account.getAgency());
         }
 
     }
