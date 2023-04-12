@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Accounts.Account;
-import Accounts.OrdeningAccounts.ByOwner.OwnerComparator;
 
 public class NumberOrder {
     public static void main(String[] args) {
@@ -24,7 +23,7 @@ public class NumberOrder {
         }
 
         // Creating Our Comparator
-        OwnerComparator accountComparator = new OwnerComparator();
+        NumberComparator accountComparator = new NumberComparator();
         System.out.println();
 
         // Sorting the List by using our own Class and Method
