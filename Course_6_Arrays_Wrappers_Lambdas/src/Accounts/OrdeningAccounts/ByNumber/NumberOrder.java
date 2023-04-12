@@ -1,11 +1,12 @@
-package Accounts.OrdeningAccounts;
+package Accounts.OrdeningAccounts.ByNumber;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import Accounts.Account;
+import Accounts.OrdeningAccounts.ByOwner.OwnerComparator;
 
-public class OrderAccountsCompare {
+public class NumberOrder {
     public static void main(String[] args) {
         // Creating Accoutns
         Account accountPedro = new Account(10, 28);
@@ -23,7 +24,7 @@ public class OrderAccountsCompare {
         }
 
         // Creating Our Comparator
-        AccountComparator accountComparator = new AccountComparator();
+        OwnerComparator accountComparator = new OwnerComparator();
         System.out.println();
 
         // Sorting the List by using our own Class and Method
