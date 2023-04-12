@@ -20,4 +20,13 @@ public class Account {
     }
     return true;
    }
+
+   public int getNumber() {
+       return number;
+   }
+   
+   public int getAgency() {
+       return agency;
+   }
+
 }

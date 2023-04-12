@@ -7,10 +7,15 @@ import Accounts.Account;
 public class AccountComparator implements Comparator<Account> {
 
     @Override
-    public int compare(Account o1, Account o2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'compare'");
-    }
+    public int compare(Account ac1, Account ac2) {
+        if(ac1.getNumber() < ac2.getNumber()){
+            return -1;
+        }
 
-    
+        if(ac1.getNumber() > ac2.getNumber()){
+            return 1;
+        }
+        
+        return 0;
+    } 
 }
