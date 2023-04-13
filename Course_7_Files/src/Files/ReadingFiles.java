@@ -16,11 +16,17 @@ public class ReadingFiles {
 
     // Creating a BufferedReader -> Reads
     BufferedReader bufferedReader = new BufferedReader(inputStreamReader); // Takes a Reader 
-    String firstLine = bufferedReader.readLine(); // Reads a Line of the Text
+    String line = bufferedReader.readLine(); // Reads a Line of the Text
+  
+    System.out.println("Printing all the lines: ");
+
+    //Loop to print all the lines
+    while(line != null){
+      System.out.println(line);
+      line = bufferedReader.readLine();
+    }
     bufferedReader.close(); // Similar to an Scanner, we need to tell the BR to close when its stops reading
 
-    System.out.println("First Line: " + firstLine);
-    
 
   }
 }
