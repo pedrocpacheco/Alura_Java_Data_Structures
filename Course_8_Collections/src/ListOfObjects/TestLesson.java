@@ -2,6 +2,7 @@ package ListOfObjects;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class TestLesson {
@@ -12,10 +13,15 @@ public class TestLesson {
 
         // Creating Lessons and adding them to the List in the same time
         lessonAList.add(new Lesson("C: Listas de Objetos",19));
-        lessonAList.add(new Lesson("B: Revisitando Array Lists", 25));
-        lessonAList.add(new Lesson("A: Relacionamento de Listas e Objetos", 15));
+        lessonAList.add(new Lesson("B: Revisitando Array Lists", 20));
+        lessonAList.add(new Lesson("A: Relacionamento de Listas e Objetos", 29));
         
+        // Sorting by names
         Collections.sort(lessonAList);
+        System.out.println(lessonAList);
+
+        // Sorting by time
+        Collections.sort(lessonAList, Comparator.comparing((Lesson::getTime)));
         System.out.println(lessonAList);
 
    
