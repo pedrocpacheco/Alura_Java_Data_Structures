@@ -26,7 +26,8 @@ public class TestLesson {
         // Sorting by time
         Collections.sort(lessonAList, Comparator.comparing((Lesson::getTime)));
         System.out.println(lessonAList);
-
+        
+        
    
     }
 }
