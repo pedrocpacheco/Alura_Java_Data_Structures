@@ -17,4 +17,9 @@ public class Student {
         return rm;
     }
 
+    @Override
+    public String toString() {
+        return "(Name: " + getName() + " | RM: " + getRm() + ")";
+    }
+
 }

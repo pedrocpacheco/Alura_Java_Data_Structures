@@ -20,8 +20,7 @@ public class TestCourseStudent {
         javaCollections.enroll(new Student("Henrique Baptista", 97706));
         javaCollections.enroll(new Student("Luane Santos", 904245));
 
-
-
+        javaCollections.getStudents().forEach(student -> System.out.println(student));
 
     }
 }
