@@ -1,11 +1,11 @@
 package ListOfObjects;
 
-public class Account {
+public class AluraClass {
     
     private String owner;
     private int time;
 
-    public Account(String owner, int time){
+    public AluraClass(String owner, int time){
         this.owner = owner;
         this.time = time;
     }
