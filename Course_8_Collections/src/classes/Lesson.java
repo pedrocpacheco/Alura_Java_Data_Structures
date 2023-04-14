@@ -1,4 +1,5 @@
-package ListOfObjects;
+package classes;
+
 
 public class Lesson implements Comparable<Lesson>{
 

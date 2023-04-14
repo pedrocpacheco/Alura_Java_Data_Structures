@@ -1,10 +1,11 @@
-package ListsTests;
+package tests;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ArrayListTeste {
+public class ArrayListTest {
     public static void main(String[] args) {
         // Creating NameList
         List<String> nameList = new ArrayList<String>();

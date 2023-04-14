@@ -1,9 +1,12 @@
-package ListOfObjects;
+package tests;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import classes.Lesson;
 
 public class TestLesson {
     public static void main(String[] args) {
