@@ -22,6 +22,14 @@ public class Student {
         return "(Name: " + getName() + " | RM: " + getRm() + ")";
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        Student student = (Student) obj;
+        if(this.name == student.name){
+            return true;
+        }
+        return false;
+    }
 
 
 }
