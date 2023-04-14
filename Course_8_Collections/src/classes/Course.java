@@ -1,6 +1,7 @@
 package classes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Course {
@@ -22,7 +23,7 @@ public class Course {
     }
 
     public List<Lesson> getLessons() {
-        return lessons;
+        return Collections.unmodifiableList(lessons);
     }
     
     public void add(Lesson lesson){
