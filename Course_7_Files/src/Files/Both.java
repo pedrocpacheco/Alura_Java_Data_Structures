@@ -11,7 +11,7 @@ public class Both{
   
     public static void main(String[] args) throws Exception{
       
-        FileOutputStream fileOutputStream = new FileOutputStream("teste.txt");
+        FileOutputStream fileOutputStream = new FileOutputStream("test.txt");
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream); 
         BufferedWriter bw = new BufferedWriter(outputStreamWriter);
 
@@ -19,7 +19,7 @@ public class Both{
         bw.close();
 
 
-        FileInputStream fileInputStream = new FileInputStream("teste.txt"); 
+        FileInputStream fileInputStream = new FileInputStream("test.txt"); 
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
         BufferedReader bReader = new BufferedReader(inputStreamReader);
 
