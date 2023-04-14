@@ -1,4 +1,4 @@
-package Files;
+package Files.HardCoded;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
