@@ -10,6 +10,9 @@ public class TestCourse {
         System.out.println(javaCollections.getLessons());
 
         javaCollections.add(new Lesson("Relashionship of Collections", 23));
+        javaCollections.add(new Lesson("Colletions on the Creation", 18));
+        javaCollections.add(new Lesson("Problem Solving with Colletions", 32));
+
 
         System.out.println(javaCollections.getLessons());
 
