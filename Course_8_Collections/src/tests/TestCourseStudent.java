@@ -23,8 +23,16 @@ public class TestCourseStudent {
         javaCollections.getStudents().forEach(student -> System.out.println(student));
 
         // Creating a new Student and seeing if it's Enrolled
-        Student thiago = new Student("Thiago Fritz", 90216);
+        Student thiago = new Student("Pedro Pacheco", 98043);
+       
+        // Using .equals
+        System.out.println("If this is True:");
         System.out.println(javaCollections.isEnrolled(thiago));
+
+        // Using .hashCode
+        System.out.println("This must be to:");
+        System.out.println();
+        
 
     }
 }
