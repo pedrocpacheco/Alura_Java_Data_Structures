@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.swing.plaf.synth.SynthDesktopPaneUI;
+
 import classes.Course;
 import classes.Lesson;
 
@@ -25,6 +27,10 @@ public class TestCourse {
         List<Lesson> mutableLessons = new ArrayList<Lesson>(inmutableLessons); 
         Collections.sort(mutableLessons); // By passing inmutalable to a List constructor it's turn to mutable
         System.out.println(mutableLessons);
+        
+        // Printing Course's information with toString()
+        System.out.println(javaCollections.toString());
+
 
     }
 }

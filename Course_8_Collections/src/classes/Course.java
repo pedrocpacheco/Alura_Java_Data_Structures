@@ -38,6 +38,9 @@ public class Course {
         return totalTime;
     }
 
-    
+    @Override
+    public String toString() {
+        return "[Course: " + getName() + " | Teacher: " + getTeacher() + " | Lessons: " + getLessons() + " | Course's Total Time: " + getTotalTime();
+    }
 
 }
