@@ -34,5 +34,10 @@ public class Student {
         return false;
     }
 
+    @Override
+    public int hashCode() {
+        return this.name.charAt(0);
+    }
+
 
 }
