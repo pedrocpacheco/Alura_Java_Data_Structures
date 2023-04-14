@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.swing.plaf.synth.SynthDesktopPaneUI;
 
 import classes.Course;
 import classes.Lesson;
