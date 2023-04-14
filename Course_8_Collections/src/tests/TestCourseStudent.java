@@ -22,5 +22,9 @@ public class TestCourseStudent {
 
         javaCollections.getStudents().forEach(student -> System.out.println(student));
 
+        // Creating a new Student and seeing if it's Enrolled
+        Student thiago = new Student("Thiago Fritz", 90216);
+        System.out.println(javaCollections.isEnrolled(thiago));
+
     }
 }
