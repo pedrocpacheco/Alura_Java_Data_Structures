@@ -1,13 +1,13 @@
 package tests;
 
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 
 public class TestStudent {
     public static void main(String[] args) {
 
         // Creating HashSet
-        Set<String> students = new HashSet<String>();
+        Collection<String> students = new HashSet<String>();
         
         students.add("Pedro");
         students.add("Henrique");
@@ -31,6 +31,10 @@ public class TestStudent {
         students.forEach(student -> {
             System.out.println("Student Name's " + student);
         });
+
+        // Contains
+        boolean isPedroInStudents = students.contains("Pedro");
+        System.out.println(isPedroInStudents); // True 
 
     }
 }
