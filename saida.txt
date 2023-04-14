@@ -1,2 +1,2 @@
 This is the printed message in the file
-I skipped a line.
+I broke a line.
