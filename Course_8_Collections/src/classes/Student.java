@@ -36,7 +36,7 @@ public class Student {
 
     @Override
     public int hashCode() {
-        return this.name.charAt(0);
+        return this.name.hashCode();
     }
 
 
