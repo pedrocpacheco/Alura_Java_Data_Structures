@@ -1,6 +1,8 @@
 package ListsTests;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListTeste {
@@ -19,11 +21,13 @@ public class ArrayListTeste {
 
         nameList.remove("Pedro"); // Removing item by value
         System.out.println(nameList);
-        
-        nameList.remove(1);
+
+        nameList.remove(1); // Removing item by index
         System.out.println(nameList);
 
         nameList.forEach(name -> {System.out.println("This name is: " + name);});
-        
+        Collections.sort(nameList);
+        System.out.println(nameList);
+
     }
 }
