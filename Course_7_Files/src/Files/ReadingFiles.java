@@ -9,7 +9,7 @@ public class ReadingFiles {
   public static void main(String[] args) throws IOException{
     
     // Creating File Input Stream -> Can Only Read Bytes
-    FileInputStream fileInputStream = new FileInputStream("lorem.txt"); // Taking the Text and Turning to Binary
+    FileInputStream fileInputStream = new FileInputStream("entrada.txt"); // Taking the Text and Turning to Binary
 
     // Creating a InputStreamReader -> Takes the bytes and turn to an Array, dont read.
     InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream); // Taking the Binary to characters
