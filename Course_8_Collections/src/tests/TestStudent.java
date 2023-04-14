@@ -22,9 +22,15 @@ public class TestStudent {
         // Different Order From Before
         System.out.println(students);
 
+        // For Each Estructure
         for (String student : students) {
             System.out.println("Student Name's: " + student);
         }
+
+        // For Each Method
+        students.forEach(student -> {
+            System.out.println("Student Name's " + student);
+        });
 
     }
 }
