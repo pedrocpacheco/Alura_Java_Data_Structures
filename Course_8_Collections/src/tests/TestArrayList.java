@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ArrayListTest {
+public class TestArrayList {
     public static void main(String[] args) {
         // Creating NameList
         List<String> nameList = new ArrayList<String>();
