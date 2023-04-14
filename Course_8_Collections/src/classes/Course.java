@@ -30,4 +30,12 @@ public class Course {
         this.lessons.add(lesson);
     }
 
+    public int getTotalTime(){
+        int totalTime = 0;
+        for(Lesson lesson : lessons){
+            totalTime += lesson.getTime();
+        }
+        return totalTime;
+    }
+
 }
