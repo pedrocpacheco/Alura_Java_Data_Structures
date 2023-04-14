@@ -5,6 +5,9 @@ public class Student {
     private int rm;
 
     public Student(String name, int rm){
+        if(name == null || rm == 0){
+            throw new NullPointerException("Informations Cannot be Null");
+        }
         this.name = name;
         this.rm = rm;
     }
