@@ -23,7 +23,7 @@ public class ArrayListTeste {
         nameList.remove(1);
         System.out.println(nameList);
 
-        nameList.forEach(name -> {System.out.println("Percorrendo: " + name);});
+        nameList.forEach(name -> {System.out.println("This name is: " + name);});
         
     }
 }
