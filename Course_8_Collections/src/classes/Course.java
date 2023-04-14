@@ -41,6 +41,13 @@ public class Course {
         this.students.add(student);
     }
 
+    public boolean isEnrolled(Student student){
+        if(this.students.contains(student)){
+            return true;
+        }
+        return false;
+    }
+
     public int getTotalTime(){
         int totalTime = 0;
         for(Lesson lesson : lessons){
