@@ -9,7 +9,7 @@ public class TestCourse {
         Course javaCollections = new Course("Mastering the Collections", "Rafael Ronqui");
         System.out.println(javaCollections.getLessons());
 
-        javaCollections.getLessons().add(new Lesson("Relashionship of Collections", 23));
+        javaCollections.add(new Lesson("Relashionship of Collections", 23));
 
         System.out.println(javaCollections.getLessons());
 
