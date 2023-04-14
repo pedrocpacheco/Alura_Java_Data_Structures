@@ -24,7 +24,9 @@ public class Course {
     public List<Lesson> getLessons() {
         return lessons;
     }
-
     
+    public void add(Lesson lesson){
+        this.lessons.add(lesson);
+    }
 
 }
