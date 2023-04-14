@@ -12,6 +12,14 @@ public class TestCourse {
         List<Lesson> javaLessons = javaCollections.getLessons();   
         
         System.out.println(javaLessons);
-    
+
+        javaLessons.add(new Lesson("Relashionship of Collections", 23));
+        
+        // Printing by reference
+        System.out.println(javaLessons);
+
+        // Printing by object method
+        System.out.println(javaCollections.getLessons());
+
     }
 }
