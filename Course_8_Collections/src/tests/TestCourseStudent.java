@@ -20,18 +20,19 @@ public class TestCourseStudent {
         javaCollections.enroll(new Student("Henrique Baptista", 97706));
         javaCollections.enroll(new Student("Luane Santos", 904245));
 
+        // Printing with the array forEach all the Enrolled Students
+        System.out.println("Enrolled Students: ");
         javaCollections.getStudents().forEach(student -> System.out.println(student));
 
-        // Creating a new Student and seeing if it's Enrolled
-        Student thiago = new Student("Pedro Pacheco", 98043);
-       
-        // Using .equals
-        System.out.println("If this is True:");
-        System.out.println(javaCollections.isEnrolled(thiago));
+        System.out.println("Is Enrolled?");
+        System.out.println(javaCollections.isEnrolled(new Student("Cesar", 22)));
 
-        // Using .hashCode
-        System.out.println("This must be to:");
-        System.out.println();
+        // Creating a new Student and seeing if it's Enrolled
+        Student anotherPedroPacheco = new Student("Pedro Pacheco", 98043);
+       
+        // Comparing to different objects but with same values, by changing .equals
+        System.out.println("Is Pedro Pacheco there? "); // Even being diferent
+        System.out.println(javaCollections.isEnrolled(anotherPedroPacheco)); // We changed the .equals
         
 
     }

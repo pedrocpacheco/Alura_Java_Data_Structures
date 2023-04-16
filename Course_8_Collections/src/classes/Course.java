@@ -42,10 +42,7 @@ public class Course {
     }
 
     public boolean isEnrolled(Student student){
-        if(this.students.contains(student)){
-            return true;
-        }
-        return false;
+        return this.students.contains(student);
     }
 
     public int getTotalTime(){
