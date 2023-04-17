@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import classes.BeforeJava8.LengthComparator;
+import classes.Comparators.LengthComparator;
 
 
 public class OrderingStrings {

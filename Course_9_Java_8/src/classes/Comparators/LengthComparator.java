@@ -1,4 +1,4 @@
-package classes.BeforeJava8;
+package classes.Comparators;
 
 import java.util.Comparator;
 
