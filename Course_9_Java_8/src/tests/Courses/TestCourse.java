@@ -3,6 +3,7 @@ package tests.Courses;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.stream.Collectors;
@@ -46,6 +47,9 @@ public class TestCourse {
 
         List<Course> listResult = courses.stream().filter(course -> course.getStudents() >= 100).collect(Collectors.toList());
         listResult.forEach(course -> System.out.println("Current Course: " + course));
-
+        
+        Map<String, Integer> mapResult = courses.stream().filter(course -> course.getStudents() >= 100).collect(Collectors.toMap(course -> course.getName(), course -> course.getStudents()));
+        mapResult.forEach((name, students) -> System.out.println(name + " has " + students + " students"));
+    
     }
 }
