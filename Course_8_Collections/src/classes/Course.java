@@ -60,6 +60,8 @@ public class Course {
 
 
     public Student getEnrolledStudent(int rm){
+        if(!rmStudent.containsKey(rm))
+            throw new NoSuchElementException("There Is no Student with This RM");
         return rmStudent.get(rm);
     }
 
