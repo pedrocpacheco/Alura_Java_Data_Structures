@@ -1,6 +1,6 @@
 package tests.BeforeJava8;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -13,28 +13,22 @@ public class OrderingStrings {
         String[] a = new String[] {"Code's House", "Caelum", "Alura Online"}; 
         List<String> words = Arrays.asList(a);
 
-        // Creating a Comparator
         LengthComparator lengthComparator = new LengthComparator();
 
-        // Sorting Itens from a Lista: Before x After:
+        Collections.sort(words, lengthComparator); // Before Java 8
+        System.out.println(words);
 
-        // Using the Collections static method -> Before
-        Collections.sort(words, lengthComparator);
+        words.sort(lengthComparator); // After Java 8
+        System.out.println(words);
 
-        // Use as parameter of list.sort() -> After
-        words.sort(lengthComparator);
+        words.sort((s1, s2) -> Integer.compare(s1.length(), s2.length())); // After Java 8 -> Lambds
+        System.out.println(words);
 
-        // For Each: Before x After
-
-        // ForEach Structure -> Before
-        for (String word : words) {
+        for (String word : words) { // Before Java 8
             System.out.println("Currente word is: " + word);
         }
 
-        // ForEach List Method -> After
-        words.forEach(word -> System.out.println(word));
-    
-        System.out.println(words);
-
+        // Lambda:
+        words.forEach(word -> System.out.println("Current word is: " + word)); // After Java 8
     }
 }
