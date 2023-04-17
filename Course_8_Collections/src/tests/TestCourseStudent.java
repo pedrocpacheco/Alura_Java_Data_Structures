@@ -47,7 +47,7 @@ public class TestCourseStudent {
         System.out.println(javaCollections.isEnrolled(anotherPedroPacheco)); // We changed the .equals and used .hashCode
         
         // Searching by RM
-        System.out.println("Who is the Student with the RM: 98043");
+        System.out.println("Who is the Student with the RM: 98043?");
         Student student = javaCollections.getEnrolledStudent(98043);
         System.out.println(student);
 

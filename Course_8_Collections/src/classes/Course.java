@@ -2,8 +2,10 @@ package classes;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
@@ -12,6 +14,7 @@ public class Course {
     private String teacher;
     private List<Lesson> lessons = new ArrayList<Lesson>();
     private Set<Student> students = new HashSet<Student>();
+    private Map<Integer, Student> rmStudent = new HashMap<>();
 
     public Course(String name, String teacher){
         this.name = name;
@@ -40,6 +43,7 @@ public class Course {
 
     public void enroll(Student student){
         this.students.add(student);
+        this.rmStudent.put(student.getRm(), student);
     }
 
     public boolean isEnrolled(Student student){
@@ -56,12 +60,7 @@ public class Course {
 
 
     public Student getEnrolledStudent(int rm){
-        for (Student student : students) {
-            if (student.getRm() == rm){
-                return student;
-            }
-        }
-        throw new NoSuchElementException("RM not founded: " + rm);
+        return rmStudent.get(rm);
     }
 
 
