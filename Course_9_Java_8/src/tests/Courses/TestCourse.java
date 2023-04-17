@@ -3,6 +3,7 @@ package tests.Courses;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 import classes.Course;
 
@@ -22,12 +23,23 @@ public class TestCourse {
         courses.stream().filter(course -> course.getStudents() >= 100); // Don't delete all the -100 students courses
         courses.forEach(System.out::println); // It print's all the courses
 
-        // Printing the filter
-        int sum = courses.stream().filter(course -> course.getStudents() >= 100)
+        // Summing
+        int sum = courses.stream()
+                        .filter(course -> course.getStudents() >= 100)
                         .mapToInt(Course::getStudents)
                         .sum();
-
+                        
         System.out.println("The Sum of the +100 Students Course's is: " + sum);
+
+        // Using Opitional Class
+        Optional<Course> opitionalCourse = courses.stream().filter(course -> course.getStudents() >= 100).findAny();
+
+        // Saving a Course in variable and printing it
+        Course course100 = opitionalCourse.orElse(null);
+        System.out.println(course100);
+
+        // Using ifPresent method
+        opitionalCourse.ifPresent(course -> System.out.println(course));
 
     }
 }
