@@ -15,10 +15,25 @@ public class OrderingStrings {
 
         // Creating a Comparator
         LengthComparator lengthComparator = new LengthComparator();
-        
-        // Using the Collections static method
+
+        // Sorting Itens from a Lista: Before x After:
+
+        // Using the Collections static method -> Before
         Collections.sort(words, lengthComparator);
 
+        // Use as parameter of list.sort() -> After
+        words.sort(lengthComparator);
+
+        // For Each: Before x After
+
+        // ForEach Structure -> Before
+        for (String word : words) {
+            System.out.println("Currente word is: " + word);
+        }
+
+        // ForEach List Method -> After
+        words.forEach(word -> System.out.println(word));
+    
         System.out.println(words);
 
     }
