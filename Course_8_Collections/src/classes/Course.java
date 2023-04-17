@@ -15,7 +15,7 @@ public class Course {
     private String teacher;
     private List<Lesson> lessons = new ArrayList<Lesson>();
     private Set<Student> students = new HashSet<Student>();
-    private Map<Integer, Student> rmStudent = new LinkedHashMap<>();
+    private Map<Integer, Student> rmToStudent = new LinkedHashMap<>();
 
     public Course(String name, String teacher){
         this.name = name;
@@ -44,7 +44,7 @@ public class Course {
 
     public void enroll(Student student){
         this.students.add(student);
-        this.rmStudent.put(student.getRm(), student);
+        this.rmToStudent.put(student.getRm(), student);
     }
 
     public boolean isEnrolled(Student student){
@@ -61,9 +61,9 @@ public class Course {
 
 
     public Student getEnrolledStudent(int rm){
-        if(!rmStudent.containsKey(rm))
+        if(!rmToStudent.containsKey(rm))
             throw new NoSuchElementException("There Is no Student with This RM");
-        return rmStudent.get(rm);
+        return rmToStudent.get(rm);
     }
 
 

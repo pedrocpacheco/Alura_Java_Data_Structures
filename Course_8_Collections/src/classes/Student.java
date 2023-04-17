@@ -21,11 +21,6 @@ public class Student {
     }
 
     @Override
-    public String toString() {
-        return "(Name: " + getName() + " | RM: " + getRm() + ")";
-    }
-
-    @Override
     public boolean equals(Object obj) {
         Student student = (Student) obj;
         if(this.name != student.name || this.rm != student.rm){
@@ -33,11 +28,15 @@ public class Student {
         }
         return true;
     }
-
+    
     @Override
     public int hashCode() {
         return this.name.hashCode();
     }
-
-
+    
+    @Override
+    public String toString() {
+        return "(Name: " + getName() + " | RM: " + getRm() + ")";
+    }
+    
 }
