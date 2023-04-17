@@ -26,17 +26,16 @@ public class TestCourseStudent {
 
         // Printing with the array forEach all the Enrolled Students
         System.out.println("Enrolled Students: ");
-        // javaCollections.getStudents().forEach(student -> System.out.println(student));
+        javaCollections.getStudents().forEach(student -> System.out.println(student));
 
         // Using Iterator
-        Set<Student> students = javaCollections.getStudents();
-        Iterator<Student> iterator = students.iterator();
-        while(iterator.hasNext()){
-            Student next = iterator.next();
-            System.out.println(next);
-        }
+        // Set<Student> students = javaCollections.getStudents();
+        // Iterator<Student> iterator = students.iterator();
+        // while(iterator.hasNext()){
+        //     Student next = iterator.next();
+        //     System.out.println(next);
+        // }
         
-
         System.out.println("Is Enrolled?");
         System.out.println(javaCollections.isEnrolled(new Student("Cesar", 22)));
 
