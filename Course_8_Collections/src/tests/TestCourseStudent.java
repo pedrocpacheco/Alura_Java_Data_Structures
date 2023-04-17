@@ -1,5 +1,9 @@
 package tests;
 
+import java.util.Set;
+
+import java.util.Iterator;
+
 import classes.Course;
 import classes.Lesson;
 import classes.Student;
@@ -18,11 +22,20 @@ public class TestCourseStudent {
         // Adding Students in the Students Set by .enroll method
         javaCollections.enroll(new Student("Pedro Pacheco", 98043));
         javaCollections.enroll(new Student("Henrique Baptista", 97706));
-        javaCollections.enroll(new Student("Luane Santos", 904245));
+        javaCollections.enroll(new Student("Daniel Soares", 904245));
 
         // Printing with the array forEach all the Enrolled Students
         System.out.println("Enrolled Students: ");
-        javaCollections.getStudents().forEach(student -> System.out.println(student));
+        // javaCollections.getStudents().forEach(student -> System.out.println(student));
+
+        // Using Iterator
+        Set<Student> students = javaCollections.getStudents();
+        Iterator<Student> iterator = students.iterator();
+        while(iterator.hasNext()){
+            Student next = iterator.next();
+            System.out.println(next);
+        }
+        
 
         System.out.println("Is Enrolled?");
         System.out.println(javaCollections.isEnrolled(new Student("Cesar", 22)));

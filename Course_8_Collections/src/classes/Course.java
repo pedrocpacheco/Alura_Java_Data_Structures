@@ -3,7 +3,6 @@ package classes;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -11,7 +10,7 @@ public class Course {
     private String name;
     private String teacher;
     private List<Lesson> lessons = new ArrayList<Lesson>();
-    private Set<Student> students = new LinkedHashSet<Student>();
+    private Set<Student> students = new HashSet<Student>();
 
     public Course(String name, String teacher){
         this.name = name;
