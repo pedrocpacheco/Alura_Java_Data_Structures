@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class Course {
@@ -52,6 +53,17 @@ public class Course {
         }
         return totalTime;
     }
+
+
+    public Student getEnrolledStudent(int rm){
+        for (Student student : students) {
+            if (student.getRm() == rm){
+                return student;
+            }
+        }
+        throw new NoSuchElementException("RM not founded: " + rm);
+    }
+
 
     @Override
     public String toString() {
