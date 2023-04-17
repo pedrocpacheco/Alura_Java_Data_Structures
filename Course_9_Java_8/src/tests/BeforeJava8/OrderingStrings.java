@@ -41,6 +41,6 @@ public class OrderingStrings {
         }
 
         // Lambda:
-        words.forEach(System.out::println); // After Java 8
+        words.forEach(System.out::println); 
     }
 }
