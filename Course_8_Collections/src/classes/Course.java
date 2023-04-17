@@ -14,7 +14,7 @@ public class Course {
     private String teacher;
     private List<Lesson> lessons = new ArrayList<Lesson>();
     private Set<Student> students = new HashSet<Student>();
-    private Map<Integer, Student> rmStudent = new HashMap<>();
+    private Map<Integer, Student> rmStudent = new LinkedHashMap<>();
 
     public Course(String name, String teacher){
         this.name = name;
