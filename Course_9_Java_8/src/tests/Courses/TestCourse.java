@@ -2,12 +2,9 @@ package tests.Courses;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 import java.util.OptionalDouble;
-import java.util.Stack;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import classes.Course;
