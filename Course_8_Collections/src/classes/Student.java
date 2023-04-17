@@ -28,10 +28,10 @@ public class Student {
     @Override
     public boolean equals(Object obj) {
         Student student = (Student) obj;
-        if(this.name == student.name){
-            return true;
+        if(this.name != student.name || this.rm != student.rm){
+            return false;
         }
-        return false;
+        return true;
     }
 
     @Override
