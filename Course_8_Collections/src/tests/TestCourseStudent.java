@@ -32,7 +32,7 @@ public class TestCourseStudent {
        
         // Comparing to different objects but with same values, by changing .equals
         System.out.println("Is Pedro Pacheco there? "); // Even being diferent
-        System.out.println(javaCollections.isEnrolled(anotherPedroPacheco)); // We changed the .equals
+        System.out.println(javaCollections.isEnrolled(anotherPedroPacheco)); // We changed the .equals and used .hashCode
         
 
     }
