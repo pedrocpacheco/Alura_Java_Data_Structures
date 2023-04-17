@@ -17,4 +17,10 @@ public class Course {
         return students;
     }
 
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        return "(Course: " + getName() + " | Students: " + getStudents() + ")";
+    }
+
 }
