@@ -1,6 +1,8 @@
 package tests.Data;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Month;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -23,6 +25,12 @@ public class TestDates {
         
         String formattedValue = nextOlimpics.format(formatter);
         System.out.println(formattedValue);
+        
+        LocalDateTime now = LocalDateTime.now();
+        System.out.println(now.format(formatter));
+
+        LocalTime value = LocalTime.of(15, 30);
+        System.out.println(value);
 
     }
 }
