@@ -41,14 +41,18 @@ public class TestCourse {
         Course course100 = opitionalCourse.orElse(null);
         System.out.println(course100);
 
-        // Using ifPresent method
+        System.out.println("<Seeing if is the same thing>");
+        
+        System.out.println("Using Lambda: ");
         opitionalCourse.ifPresent(course -> System.out.println(course));
 
+        System.out.println("Using Method Reference: ");
+        opitionalCourse.ifPresent(System.out::println);
 
         List<Course> listResult = courses.stream().filter(course -> course.getStudents() >= 100).collect(Collectors.toList());
         listResult.forEach(course -> System.out.println("Current Course: " + course));
         
-        Map<String, Integer> mapResult = courses.stream().filter(course -> course.getStudents() >= 100).collect(Collectors.toMap(course -> course.getName(), course -> course.getStudents()));
+        Map<String, Integer> mapResult = courses.stream().filter(course -> course.getStudents() >= 100).collect(Collectors.toMap(Course::getName, Course::getStudents));
         mapResult.forEach((name, students) -> System.out.println(name + " has " + students + " students"));
     
     }
