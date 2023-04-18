@@ -43,10 +43,10 @@ public class TestCourse {
 
         System.out.println("<Seeing if is the same thing>");
         
-        System.out.println("Using Lambda: ");
+        System.out.println("1- Using Lambda: ");
         opitionalCourse.ifPresent(course -> System.out.println(course));
 
-        System.out.println("Using Method Reference: ");
+        System.out.println("2- Using Method Reference: ");
         opitionalCourse.ifPresent(System.out::println);
 
         List<Course> listResult = courses.stream().filter(course -> course.getStudents() >= 100).collect(Collectors.toList());
